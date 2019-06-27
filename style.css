@@ -1,0 +1,88 @@
+<style>
+    :root {
+      --pic-size: 200px;
+      --border-size: 5px;
+      --var-color-border: #ffffff;
+      --horizontal: 5px;
+      --vertical: 10px;
+      --color-shadow: #888888;
+      --blur: 0px;
+      --brightness: 100%;
+      --contrast: 100%;
+      --grayscale: 0%;
+      --opacity: 100%;
+      --saturate: 100%;
+    }
+
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 150;
+      font-size: 25px;
+    }
+
+    div.settings {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      grid-gap: 9px;
+    }
+
+    div.settings label {
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    input {
+      width: 100px;
+    }
+
+    input[type="button"] {
+      margin: 30px;
+      height: 50px;
+      width: 150px;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    input[type="file"] {
+      margin: 20px;
+      height: 50px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    h3 {
+      text-decoration: underline;
+      padding: 10px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    div .image-preview {
+      margin: 10px;
+    }
+
+    .image-preview {
+      border-style: solid;
+      border-width: var(--border-size);
+      height: var(--pic-size);
+      border-color: var(--var-color-border);
+
+      box-shadow: var(--horizontal) var(--vertical) 0px 0px var(--color-shadow);
+
+      filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast)) grayscale(var(--grayscale)) opacity(var(--opacity)) saturate(var(--saturate));
+
+      /*
+
+      Other inputs to make: border-width
+      */
+    }
+  </style>
